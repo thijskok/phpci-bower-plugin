@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PHPCI plugin for Bower integration by thijskok</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>PHPCI plugin for Bower integration</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/thijskok/phpci-bower-plugin">View the Project on GitHub <small>thijskok/phpci-bower-plugin</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/thijskok/phpci-bower-plugin/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/thijskok/phpci-bower-plugin/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/thijskok/phpci-bower-plugin">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="bower-plugin-for-phpci" class="anchor" href="#bower-plugin-for-phpci" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower plugin for <a href="https://www.phptesting.org">PHPCI</a>
+</h1>
+
+<p>A plugin for PHPCI to download and install Bower packages required by your application.</p>
+
+<h3>
+<a id="install-the-plugin" class="anchor" href="#install-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install the Plugin</h3>
+
+<ol>
+<li>Navigate to your PHPCI root directory and run <code>composer require thijskok/phpci-bower-plugin</code>
+</li>
+<li>Update your <code>phpci.yml</code> in the project you want to deploy with</li>
+</ol>
+
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<ol>
+<li>
+<a href="https://www.bower.io">Bower</a> needs to be installed.</li>
+</ol>
+
+<h3>
+<a id="plugin-options" class="anchor" href="#plugin-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugin Options</h3>
+
+<ul>
+<li>
+<strong>force</strong> <em>[boolean, optional]</em> - Force latest version on conflict</li>
+<li>
+<strong>production</strong> <em>[boolean, optional]</em> - Do not install project devDependencies</li>
+</ul>
+
+<h3>
+<a id="phpci-config" class="anchor" href="#phpci-config" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHPCI Config</h3>
+
+<div class="highlight highlight-source-yaml"><pre><span class="pl-s"><span class="pl-ent">\ThijsKok\PHPCI\Plugin\Bower:</span></span>
+    <span class="pl-s"><span class="pl-ent">force:</span> <span class="pl-s">false</span></span>
+    <span class="pl-s"><span class="pl-ent">production:</span> <span class="pl-s">true</span></span></pre></div>
+
+<p>example:</p>
+
+<div class="highlight highlight-source-yaml"><pre><span class="pl-s"><span class="pl-ent">setup:</span></span>
+    <span class="pl-s"><span class="pl-ent">\ThijsKok\PHPCI\Plugin\Bower:</span></span>
+        <span class="pl-s"><span class="pl-ent">production:</span> <span class="pl-s">false</span></span></pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/thijskok">thijskok</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
