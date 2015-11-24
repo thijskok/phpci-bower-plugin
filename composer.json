@@ -14,10 +14,17 @@
   "require-dev": {
     "block8/phpci": "1.6.x"
   },
-  "target-dir": "ThijsKok/PHPCI/Plugin",
   "autoload": {
-    "psr-0": {
-      "ThijsKok\\PHPCI\\Plugin": ""
+    "psr-4": {
+      "ThijsKok\\PHPCI\\Plugin\\": "src/"
+    }
+  },
+  "extra": {
+    "phpci": {
+      "pluginNamespace": "ThijsKok\\PHPCI\\Plugin\\",
+      "suppliedPlugins": [
+        {"name": "Bower", "class": "Bower"}
+      ]
     }
   }
 }
