@@ -61,12 +61,8 @@ class Bower implements \PHPCI\Plugin
      */
     public function execute()
     {
-        // if npm does not work, we cannot use bower, so we return false
-        $cmd = 'cd %s && npm install';
-        if (IS_WIN) {
-            $cmd = 'cd /d %s && npm install';
-        }
-        if (!$this->phpci->executeCommand($cmd, $this->directory)) {
+        // will not run without bower
+        if (is_null($this->bower)) {
             return false;
         }
 
