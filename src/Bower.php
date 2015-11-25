@@ -71,6 +71,7 @@ class Bower implements \PHPCI\Plugin
         if (IS_WIN) {
             $cmd = 'cd /d %s && ' . $this->bower;
         }
+        $cmd .= ' install'; // install command
         $cmd .= ' %s'; // production flag
         $cmd .= ' %s'; // force flag
 
