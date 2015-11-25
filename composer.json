@@ -1,6 +1,7 @@
 {
   "name": "thijskok/phpci-bower-plugin",
   "description": "PHPCI plugin for Bower integration",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
