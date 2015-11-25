@@ -5,7 +5,8 @@ A plugin for PHPCI to download and install Bower packages required by your appli
 ### Install the Plugin
 
 1. Navigate to your PHPCI root directory and run `composer require thijskok/phpci-bower-plugin`
-2. Update your `phpci.yml` in the project you want to deploy with
+2. If you are using the PHPCI daemon, restart it
+3. Update your `phpci.yml` in the project you want to deploy with
 
 ### Prerequisites
 
@@ -18,7 +19,7 @@ A plugin for PHPCI to download and install Bower packages required by your appli
 ### PHPCI Config
 
 ```yml
-\ThijsKok\PHPCI\Plugin\Bower:
+ThijsKok\PHPCI\Plugin\Bower:
     force: false
     production: true
 ```
@@ -27,6 +28,6 @@ example:
 
 ```yml
 setup:
-    \ThijsKok\PHPCI\Plugin\Bower:
+    ThijsKok\PHPCI\Plugin\Bower:
         production: false
 ```
